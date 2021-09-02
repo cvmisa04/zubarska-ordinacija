@@ -1,0 +1,31 @@
+{
+  "name": "zubarska_ordinacija",
+  "version": "1.0.0",
+  "description": "Potrebno je napraviti aplikaciju za zubarsku ordinaciju sa jednom zubarskom stolicom tj. samo",
+  "main": "server",
+  "scripts": {
+    "start": "nodemon -r esm server/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Milos Cvetkovic",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "query": "^0.2.0"
+  },
+  "devDependencies": {
+    "@architect/sandbox": "^4.0.1"
+  }
+}
