@@ -29,7 +29,7 @@ const MojTermin = ({ match, history }) => {
 
     const loadTermin = async () => {
 
-        let res = await getTermin(keyword)
+        let res = await getTermin(keyword);
         setTermin(res.data)
 
     }

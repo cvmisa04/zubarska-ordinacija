@@ -20,19 +20,13 @@ export const getTermin = async(jmbg)=>{
         },
       };
 
-    return await axios.get(`/api/termin?jmbg=${jmbg}`,config).then(response=>console.log(response)).catch(error=>{
-      if(error.response){
-        console.log(error.response.status)
-      }else if (error.request){
-        console.log(error.request)
-      }
-    })
+    return await axios.get(`/termin?jmbg=${jmbg}`,config)
 }
 
 export const removeTermin= async(id)=>{
- return await axios.delete(`/api/termin/${id}`)
+ return await axios.delete(`/termin/${id}`)
 }
 
 export const allTermin = async()=>{
-    return await axios.get('/api/termini');
+    return await axios.get('/termini');
 }
