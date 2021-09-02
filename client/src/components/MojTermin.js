@@ -2,7 +2,7 @@ import React, { useEffect, useState,useRef } from 'react'
 import { getTermin, removeTermin } from '../actions/termini'
 import { toast } from 'react-toastify'
 import Termin from './table/Termin'
-import { response } from 'express';
+
 export const FuncContext = React.createContext();
 
 
